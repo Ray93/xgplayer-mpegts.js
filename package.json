@@ -1,0 +1,45 @@
+{
+  "name": "xgplayer-mpegts.js",
+  "version": "1.0.0",
+  "description": "A extension plugin which integrated mpegts.js based on xgplayer",
+  "type": "module",
+  "author": "ray93.xu@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Ray93/xgplayer-mpegts.js.git"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/es/index.d.ts",
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.js"
+    }
+  },
+  "main": "./dist/umd/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/es/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@rslib/core": "^0.6.5",
+    "@types/node": "^22.8.1",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.0"
+  },
+  "dependencies": {
+    "mpegts.js": "^1.8.0",
+    "xgplayer": "^3.0.21"
+  }
+}
