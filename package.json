@@ -6,7 +6,7 @@
   "author": "ray93.xu@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Ray93/xgplayer-mpegts.js.git"
+    "url": "git+ssh://git@github.com/Ray93/xgplayer-mpegts.js.git"
   },
   "license": "MIT",
   "exports": {
