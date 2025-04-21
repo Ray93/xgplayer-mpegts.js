@@ -1,23 +1,24 @@
 # xgplayer-mpegts.js
+
 [![NPM downloads](https://img.shields.io/npm/dm/xgplayer-mpegts.js)](https://www.npmjs.com/package/xgplayer-mpegts.js)
-[![Latest Stable Version](https://img.shields.io/npm/v/xgplayer-mpegts.js)](https://www.npmjs.com/package/xgplayer-mpegts.js)  
+[![Latest Stable Version](https://img.shields.io/npm/v/xgplayer-mpegts.js)](https://www.npmjs.com/package/xgplayer-mpegts.js) 
 
-[中文](README_zh.md)
+[English](README.md)
 
-A extension plugin which integrated [mpegts.js](https://github.com/xqq/mpegts.js) based on [xgplayer](https://github.com/bytedance/xgplayer).
+基于[xgplayer](https://github.com/bytedance/xgplayer)集成[mpegts.js](https://github.com/xqq/mpegts.js)的扩展插件。
 
-Some code references are taken from [xgplayer-flv.js](https://github.com/bytedance/xgplayer/tree/main/packages/xgplayer-flv.js).
+部分代码参考自[xgplayer-flv.js](https://github.com/bytedance/xgplayer/tree/main/packages/xgplayer-flv.js)。
 
-## How to use
+## 使用方法
 
-### install
+### 安装
 
 ```shell
-$ npm istall xgplayer
-$ npm istall xgplayer-mpegts.js
+$ npm install xgplayer
+$ npm install xgplayer-mpegts.js
 ```
 
-### Usage
+### 使用方式
 
 html
 
@@ -39,21 +40,21 @@ const player = new Player({
   MpegtsPlugin: {
     mediaDataSource: { type: "flv" },
     mpegtsConfig: {},
-  } as MpegtsPluginConfig, // config for plugin MpegtsPlugin
-  // If use CDN loading,you can Get the plugin through window.MpegtsPlugin
+  } as MpegtsPluginConfig, // MpegtsPlugin插件的配置
+  // 如果使用CDN加载，可以通过window.MpegtsPlugin获取插件
 });
 ```
 
-### Get the `mpegts` instance
+### 获取mpegts实例
 
 ```js
 const mpegtsInstance = player.__mpegts__;
-// or
+// 或者
 const mpegtsInstance = player.plugins.mpegtsplugin.mpegts;
 ```
 
-### Live stream frame-chasing configuration
-For specific configurations, refer to the [mpegts official documentation](https://github.com/xqq/mpegts.js/blob/master/docs/api.md#mpegtscreateplayer)
+### 直播追帧配置
+具体配置参考[mpegts官方文档](https://github.com/xqq/mpegts.js/blob/master/docs/api.md#mpegtscreateplayer)
 
 ```js
 const player = new Player({
