@@ -1,6 +1,6 @@
 {
   "name": "xgplayer-mpegts.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A extension plugin which integrated mpegts.js based on xgplayer",
   "type": "module",
   "author": "ray93.xu@gmail.com",
