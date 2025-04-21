@@ -1,13 +1,13 @@
 import { BasePlugin, Events } from "xgplayer";
 import Mpegts from "mpegts.js";
 
-interface MpegtsPluginConfig {
+export interface MpegtsPluginConfig {
   mediaDataSource: Mpegts.MediaDataSource;
   mpegtsConfig: Mpegts.Config;
 }
 
 class MpegtsPlugin extends BasePlugin {
-  private mpegts: Mpegts.Player | null = null;
+  mpegts: Mpegts.Player | null = null;
 
   static get isSupported() {
     return Mpegts.isSupported;
